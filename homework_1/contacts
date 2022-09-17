@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <meta charset="UTF-8"
+    </head>
     <body>
         <h1>Contacts</h1>
+        
     </body>
 </html>
