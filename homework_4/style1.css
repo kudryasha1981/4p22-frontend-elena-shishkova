@@ -13,6 +13,8 @@ body {
     row-gap: 10px;
     box-shadow: 5px 6px 5px 5px #1e4a8769;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .product {
     height: 230px;
