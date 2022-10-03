@@ -5,14 +5,12 @@
   }
 body {
     margin: 20px;
-    margin-left: 20px;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
-    margin-left: 13px;
     box-shadow: 5px 6px 5px 5px #1e4a8769;
     justify-content: center;
 }
@@ -23,7 +21,6 @@ body {
     display: flex;
     column-gap: 20px;
     background-image: linear-gradient(white 0%, #3172cb);
-    justify-content: center;
 }
 .product-img {
     height: 200px;
