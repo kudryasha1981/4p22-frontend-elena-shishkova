@@ -27,6 +27,15 @@ body {
 .product-img {
     height: 200px;
 }
+.product-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+p {
+    margin: 20px;
+}
 button {
     background-color: white;
     border-radius: 10px;
