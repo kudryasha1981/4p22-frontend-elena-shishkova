@@ -28,7 +28,7 @@
 
 .common-header__h1 {
     margin-top: 2vh;
-    margin-left: 40%;
+    margin-left: 30%;
     font-size: x-large;
 }
 
@@ -63,7 +63,7 @@
 
 .common-section__content-right {
     width: 70%;
-    margin-left: 32%;
+    margin-left: 32vmin;
     position: relative;
 }
 
