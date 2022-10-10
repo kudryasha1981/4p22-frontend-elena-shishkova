@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.common-header {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: #c0f1fe;
+    color: #013b4b;
+    z-index: 999;
+    border-bottom: #013b4b solid 2px;
+}
+
+.common-footer {
+    width: 100%;
+    height: 12%;
+    background: #c0f1fe;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    border-top: #013b4b solid 2px;
+}
+
+.common-header__h1 {
+    margin-top: 2vh;
+    margin-left: 30%;
+    font-size: x-large;
+}
+
+.common-section-content-right-down-blue__h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.common-header__img {
+    margin-left: 3%;
+}
+
+.common-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+.common-section__content-left {
+    width: 20%;
+    left: 0;
+    height: 100vh;
+    margin-left: 0;
+    border-right: #013b4b solid 2px;
+    background: #e8f8fc;
+    position: fixed;
+    top: 0;
+}
+
+.common-section__content-right {
+    width: 80%;
+    margin-left: 22%;
+    position: relative;
+}
+
+.common-section-content-right__up {
+    height: 12vh;
+    width: 100%;
+    box-shadow: 5px 6px 5px 5px #1e4a8769;
+    border-bottom: #013b4b 2px;
+    position: sticky;
+    top: 12%;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 5px;
+    background: white;
+    z-index: 999;
+}
+
+.common-section-content-right__down {
+    height: 100%;
+}
+
+.common-section-content-right-up__input {
+    width: 50%;
+    height: 50%;
+    margin-top: 1.5%;
+    margin-left: 20%;
+    border-radius: 5px;
+    border: #013b4b solid 1px;
+}
+
+.common-section-content-right-up__button {
+    width: 10%;
+    height: 50%;
+    background: #c0f1fe;
+    border-radius: 5px;
+    border: #013b4b solid 1px;
+}
+
+.common-section-content-right-down__blue {
+    background: #029bc5;
+    color: white;
+    position: sticky;
+    top: 24vh;
+    box-shadow: 5px 6px 5px 5px #1e6d8733;
+}
+
+.common-section-content-left__a {
+    margin-top: 20vh;
+    margin-left: 30%;
+    font-size: x-large;
+}
+
+
+
+
+
+
+
