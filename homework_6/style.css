@@ -1,11 +1,10 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
 
 .common-header {
-    width: 100vw;
+    width: 100%;
     height: 12vh;
     display: flex;
     position: fixed;
@@ -18,7 +17,7 @@
 
 .common-footer {
     width: 100%;
-    height: 12%;
+    height: 12vh;
     background: #c0f1fe;
     position: fixed;
     bottom: 0;
@@ -27,20 +26,20 @@
 }
 
 .common-header__h1 {
-    margin-top: 2vh;
-    margin-left: 30%;
-    font-size: 1.5em;
-    width: 50vw;
-    min-width: 50%;
+    justify-content: center;
+    font-size: 2vw;
+    margin-left: 30vw;
+    margin-top: 0.5em;
+    overflow: hidden;
 }
 
 .common-section-content-right-down-blue__h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .common-header__img {
-    margin-left: 3%;
+    margin-left: 20px;
 }
 
 .common-section {
@@ -52,10 +51,9 @@
 }
 
 .common-section__content-left {
-    width: 30vmin;
-    min-width: 150px;
+    width: 20%;
     left: 0;
-    height: 100vh;
+    height: 100%;
     margin-left: 0;
     border-right: #013b4b solid 2px;
     background: #e8f8fc;
@@ -64,19 +62,21 @@
 }
 
 .common-section__content-right {
-    width: 70vmin;
-    min-width: 200px;
-    margin-left: 35vmin;
-    position: relative;
+    width: 80%;
+    margin-left: 25vw;
+    margin-top: 0;
+    min-width: 50vw;
+    z-index: 998;
 }
 
 .common-section-content-right__up {
     height: 12vh;
+    min-height: 60px;
     width: 100%;
     box-shadow: 5px 6px 5px 5px #1e4a8769;
     border-bottom: #013b4b 2px;
     position: sticky;
-    top: 12%;
+    top: 12vh;
     margin-left: 0;
     margin-top: 0;
     border-radius: 5px;
@@ -85,25 +85,26 @@
 }
 
 .common-section-content-right__down {
-    height: 100%;
+    height: 100vh;
+    margin-top: 0;
 }
 
 .common-section-content-right-up__input {
     width: 50%;
     height: 50%;
-    margin-top: 1.5%;
-    margin-left: 20%;
+    margin-top: 1.5em;
+    margin-left: 30px;
     border-radius: 5px;
     border: #013b4b solid 1px;
 }
 
 .common-section-content-right-up__button {
-    width: 10%;
-    min-width: 50px;
+    width: 20%;
     height: 50%;
     background: #c0f1fe;
     border-radius: 5px;
     border: #013b4b solid 1px;
+    overflow: hidden;
 }
 
 .common-section-content-right-down__blue {
@@ -116,8 +117,8 @@
 
 .common-section-content-left__a {
     margin-top: 20vh;
-    margin-left: 10%;
-    font-size: x-large;
+    margin-left: 15%;
+    font-size: 2vw;
 }
 
 
