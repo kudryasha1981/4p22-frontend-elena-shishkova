@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.header__enter {
+    color: #1A226B;
+}
+
 .form {
     color: #787878;
 }
@@ -70,9 +74,9 @@ body {
     color: white;
 }
 
-/* 768-1440 */
+/* 1440> */
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .header {
         height: calc(80/1440*100vw);
     }
@@ -121,6 +125,7 @@ body {
     .form-email__input {
         margin-top: calc(3/1440*100vw);
         height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
     }
 
     .form-email__input::placeholder {
@@ -135,6 +140,7 @@ body {
     .form-password__input {
         margin-top: calc(5/1440*100vw);
         height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
     }
 
     .form-password__input::placeholder {
@@ -151,4 +157,3 @@ body {
         font-size: calc(24/1440*100vw);
     }
 }
-

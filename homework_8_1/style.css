@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.header__enter {
+    color: #1A226B;
+}
+
 .form {
     color: #787878;
 }
@@ -70,84 +74,87 @@ body {
     color: white;
 }
 
-/* 320-768 */
+/* 768-1440 */
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     .header {
-        height: calc(80/768*100vw);
+        height: calc(80/1440*100vw);
     }
 
     .header-container-image__image {
-        width: calc(124/768*768);
-        height: calc(25/768*100vw);
-        margin-left: calc(20/768*100vw);
+        width: calc(222/1440*768);
+        height: calc(50/1440*100vw);
+        margin-left: calc(30/1440*100vw);
     }
 
     .header__heading {
-        margin-left: calc(34/768*100vw);
-        font-size: calc(24/768*100vw);
+        margin-left: calc(30/1440*100vw);
+        font-size: calc(36/1440*100vw);
     }
 
     .header__registration {
-        margin-left: calc(219/768*100vw);
-        font-size: calc(16/768*100vw);
+        margin-left: calc(628/1440*100vw);
+        font-size: calc(24/1440*100vw);
     }
 
     .header__enter {
-        margin-left: calc(36/768*100vw);
-        font-size: calc(16/768*100vw);
+        margin-left: calc(28/1440*100vw);
+        font-size: calc(24/1440*100vw);
     }
 
     .form {
-        width: calc(600/768*100vw);
-        height: calc(383/768*100vw);
-        margin-left: calc(84/768*100vw);
-        margin-top: calc(80/768*100vw);
+        width: calc(600/1440*100vw);
+        height: calc(383/1440*100vw);
+        margin-left: calc(403/1440*100vw);
+        margin-top: calc(125/1440*100vw);
         box-shadow: 0px 0px 40px 10px #b4b2b2;
-        padding-left: calc(45/768*100vw);
-        padding-right: calc(46/768*100vw);
+        padding-left: calc(45/1440*100vw);
+        padding-right: calc(46/1440*100vw);
     }
 
     .form__heading {
-        padding-top: calc(26/768*100vw);
+        padding-top: calc(26/1440*100vw);
         font-size: calc(50/1440*100vw);
     }
 
     .form-email__label {
-        margin-top: calc(17/768*100vw);
-        font-size: calc(16/768*100vw);
+        margin-top: calc(17/1440*100vw);
+        font-size: calc(16/1440*100vw);
     }
 
     .form-email__input {
-        margin-top: calc(3/768*100vw);
-        height: calc(49/768*100vw);
+        margin-top: calc(3/1440*100vw);
+        height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
     }
 
     .form-email__input::placeholder {
-        font-size: calc(28/768*100vw);
+        font-size: calc(28/1440*100vw);
     }
 
     .form-password__label {
-        margin-top: calc(11/768*100vw);
-        font-size: calc(16/768*100vw);
+        margin-top: calc(11/1440*100vw);
+        font-size: calc(16/1440*100vw);
     }
 
     .form-password__input {
-        margin-top: calc(5/768*100vw);
-        height: calc(49/768*100vw);
+        margin-top: calc(5/1440*100vw);
+        height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
     }
 
     .form-password__input::placeholder {
-        font-size: calc(28/768*100vw);
+        font-size: calc(28/1440*100vw);
     }
 
     .form__button {
-        margin-top: calc(40/768*100vw);
+        margin-top: calc(40/1440*100vw);
     }
 
     .form-button__enter {
-        width: calc(180/768*100vw);
-        height: calc(52/768*100vw);
-        font-size: calc(24/768*100vw);
+        width: calc(180/1440*100vw);
+        height: calc(52/1440*100vw);
+        font-size: calc(24/1440*100vw);
     }
 }
+
