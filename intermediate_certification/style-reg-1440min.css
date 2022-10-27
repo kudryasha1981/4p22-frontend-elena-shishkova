@@ -6,10 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vw;
-}
+
 
 .header {
     position: fixed;
@@ -22,6 +19,7 @@ body {
     box-shadow: 0px 4px 4px 0px #b4b2b2;
     color: #787878;
     font-family: Inter;
+    z-index: 2;
 }
 
 .header__container-image {
@@ -38,9 +36,123 @@ body {
     text-decoration: none;
 }
 
+main {
+    width: calc(100vw-5vw);
+    height: 100vw;
+}
+
+.form {
+    color: #787878;
+}
+
+.form__heading {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.form-email__label {
+    display: block;
+}
+
+.form-password__label {
+    display: block;
+}
+
+.form-password-again__label {
+    display: block;
+}
+
+.form-email__input {
+    width: 100%;
+    border: 2px solid #787878;
+}
+
+.form-email__input::placeholder {
+    color: #CCCCCC;
+}
+
+.form-password__input {
+    width: 100%;
+    border: 2px solid #787878;
+}
+
+.form-password__input::placeholder {
+    color: #CCCCCC;
+}
+
+.form-password-again__input {
+    width: 100%;
+    border: 2px solid #787878;
+}
+
+.form-password-again__input::placeholder {
+    color: #CCCCCC;
+}
+
+.form-textarea-area {
+    width: 100%;
+    border: 2px solid #787878;
+}
+
+.form-textarea-area::placeholder {
+    color: #CCCCCC;
+}
+
+.form-gender__man {
+    display: flex;
+    align-items: center;
+}
+
+.form-gender__woman {
+    display: flex;
+    align-items: center;
+}
+
+.form__checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.form-checkbox__input:checked + label::after {
+    opacity: 1;
+}
+
+.form-checkbox__label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid #787878;
+}
+
+.form-checkbox__label::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #787878;
+    opacity: 0;
+    transition: .2 opacity;
+    background: #787878;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* 1440> */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width:1440px) {
     .header {
         height: calc(80/1440*100vw);
     }
@@ -64,5 +176,154 @@ body {
     .header__enter {
         margin-left: calc(28/1440*100vw);
         font-size: calc(24/1440*100vw);
+    }
+
+    .form {
+        width: calc(600/1440*100vw);
+        height: calc(875/1440*100vw);
+        margin-left: calc(403/1440*100vw);
+        margin-top: calc(180/1440*100vw);
+        box-shadow: 0px 0px 40px 10px #b4b2b2;
+        padding-left: calc(45/1440*100vw);
+        padding-right: calc(46/1440*100vw);
+    }
+
+    .form__heading {
+        padding-top: calc(26/1440*100vw);
+        font-size: calc(50/1440*100vw);
+    }
+
+    .form-email__label {
+        margin-top: calc(17/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .form-email__input {
+        margin-top: calc(3/1440*100vw);
+        height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
+    }
+
+    .form-email__input::placeholder {
+        font-size: calc(28/1440*100vw);
+    }
+
+    .form-password__label {
+        margin-top: calc(11/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .form-password__input {
+        margin-top: calc(5/1440*100vw);
+        height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
+    }
+
+    .form-password__input::placeholder {
+        font-size: calc(28/1440*100vw);
+    }
+
+    .form-password-again__label {
+        margin-top: calc(11/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .form-password-again__input {
+        margin-top: calc(5/1440*100vw);
+        height: calc(49/1440*100vw);
+        padding-left: calc(15/1440*100vw);
+    }
+
+    .form-password-again__input::placeholder {
+        font-size: calc(28/1440*100vw);
+    }
+
+    .form-gender__heading {
+        margin-top: calc(11/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .form-gender__man {
+        margin-top: calc(5/1440*100vw);
+    }
+
+    .form-gender-man__radio {
+        width: calc(20/1440*100vw);
+        height: calc(20/1440*100vw);
+        border-radius: 50%;
+    }
+
+    .form-gender-man__label {
+        font-size: calc(14/1440*100vw);
+        margin-left: calc(9/1440*100vw);
+    }
+
+    .form-gender__woman {
+        margin-top: calc(9/1440*100vw);
+    }
+
+    .form-gender-woman__radio {
+        width: calc(20/1440*100vw);
+        height: calc(20/1440*100vw);
+        border-radius: 50%;
+    }
+
+    .form-gender-woman__label {
+        font-size: calc(14/1440*100vw);
+        margin-left: calc(9/1440*100vw);
+    }
+
+    .form-textarea__heading {
+        margin-top: calc(11/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .form-textarea-area {
+        margin-top: calc(5/1440*100vw);
+        height: calc(246/1440*100vw);
+        padding-left: calc(15/1440*100vw);
+    }
+
+    .form-textarea-area::placeholder {
+        font-size: calc(28/1440*100vw);
+    }
+
+    .form__checkbox {
+        margin-top: calc(24/1440*100vw);
+        height: calc(24/1440*100vw);
+    }
+
+    .form-checkbox__input {
+        width: calc(24/1440*100vw);
+        height: 100%;
+    }
+
+    .form-checkbox__label {
+        font-size: calc(14/1440*100vw);
+        padding-left: calc(34/1440*100vw);
+    }
+
+    .form-checkbox__label::before {
+        width: calc(24/1440*100vw);
+        height: calc(24/1440*100vw);
+    }
+
+    .form-checkbox__label::after {
+        width: calc(12/1440*100vw);
+        height: calc(12/1440*100vw);
+        left: calc(6/1440*100vw);
+        top: calc(6/1440*100vw);
+    }
+
+    .form__button {
+        margin-top: calc(30/1440*100vw);
+    }
+
+    .form-button__enter {
+        width: calc(180/1440*100vw);
+        height: calc(52/1440*100vw);
+        font-size: calc(24/1440*100vw);
+        background: #1A226B;
+        color: white;
     }
 }

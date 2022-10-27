@@ -6,10 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vw;
-}
+
 
 .header {
     position: fixed;
@@ -22,6 +19,7 @@ body {
     box-shadow: 0px 4px 4px 0px #b4b2b2;
     color: #787878;
     font-family: Inter;
+    z-index: 2;
 }
 
 .header__container-image {
@@ -36,6 +34,11 @@ body {
 .header-enter__style {
     color: #787878;
     text-decoration: none;
+}
+
+main {
+    width: calc(100vw-5vw);
+    height: 100vw;
 }
 
 .form {
@@ -97,6 +100,16 @@ body {
     color: #CCCCCC;
 }
 
+.form-gender__man {
+    display: flex;
+    align-items: center;
+}
+
+.form-gender__woman {
+    display: flex;
+    align-items: center;
+}
+
 .form__checkbox {
     position: relative;
     display: flex;
@@ -139,7 +152,7 @@ body {
 
 /* 768-1440 */
 
-@media screen and (min-width: 768px) and (max-width:1440px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     .header {
         height: calc(80/1440*100vw);
     }
@@ -232,16 +245,32 @@ body {
 
     .form-gender__man {
         margin-top: calc(5/1440*100vw);
+    }
+
+    .form-gender-man__radio {
+        width: calc(20/1440*100vw);
+        height: calc(20/1440*100vw);
+        border-radius: 50%;
+    }
+
+    .form-gender-man__label {
         font-size: calc(14/1440*100vw);
+        margin-left: calc(9/1440*100vw);
     }
 
     .form-gender__woman {
         margin-top: calc(9/1440*100vw);
-        font-size: calc(14/1440*100vw);
     }
 
     .form-gender-woman__radio {
-        
+        width: calc(20/1440*100vw);
+        height: calc(20/1440*100vw);
+        border-radius: 50%;
+    }
+
+    .form-gender-woman__label {
+        font-size: calc(14/1440*100vw);
+        margin-left: calc(9/1440*100vw);
     }
 
     .form-textarea__heading {

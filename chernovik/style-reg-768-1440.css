@@ -1,3 +1,5 @@
+/* 768-1440 */
+
 * {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -10,12 +12,17 @@ body {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
     display: flex;
     align-items: center;
     width: 100vw;
     box-shadow: 0px 4px 4px 0px #b4b2b2;
     color: #787878;
     font-family: Inter;
+    z-index: 2;
 }
 
 .header__container-image {
@@ -25,6 +32,11 @@ body {
 
 .header__registration {
     color: #1A226B;
+}
+
+.header-enter__style {
+    color: #787878;
+    text-decoration: none;
 }
 
 .form {
@@ -75,6 +87,28 @@ body {
 
 .form-password-again__input::placeholder {
     color: #CCCCCC;
+}
+
+.form-gender__man {
+    position: relative;
+}
+
+.form-gender__man > input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.form-gender__woman {
+    position: relative;
+}
+
+.form-gender__woman > input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
 
 .form-textarea-area {
@@ -128,7 +162,7 @@ body {
 
 /* 768-1440 */
 
-@media screen and (min-width: 768px) and (max-width:1440px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     .header {
         height: calc(80/1440*100vw);
     }
@@ -158,15 +192,15 @@ body {
         width: calc(600/1440*100vw);
         height: calc(875/1440*100vw);
         margin-left: calc(403/1440*100vw);
-        margin-top: calc(125/1440*100vw);
+        margin-top: calc(180/1440*100vw);
         box-shadow: 0px 0px 40px 10px #b4b2b2;
         padding-left: calc(45/1440*100vw);
         padding-right: calc(46/1440*100vw);
     }
 
     .form__heading {
-        font-size: calc(50/1440*100vw);
         padding-top: calc(26/1440*100vw);
+        font-size: calc(50/1440*100vw);
     }
 
     .form-email__label {
@@ -214,9 +248,28 @@ body {
         font-size: calc(28/1440*100vw);
     }
 
-    .form__gender-heading {
-        padding-top: calc(11/1440*100vw);
+    .form-gender__heading {
+        margin-top: calc(11/1440*100vw);
         font-size: calc(16/1440*100vw);
+    }
+
+    .form-gender__man {
+        margin-top: calc(5/1440*100vw);
+        font-size: calc(14/1440*100vw);
+    }
+
+    .form-gender__man > label::before {
+        content: '';
+        position: absolute;
+        width: calc(20/1440*100vw);
+        height: calc(20/1440*100vw);
+        border-radius: 50%;
+        border: 2px solid #787878;
+    }
+
+    .form-gender__woman {
+        margin-top: calc(9/1440*100vw);
+        font-size: calc(14/1440*100vw);
     }
 
     .form-textarea__heading {
