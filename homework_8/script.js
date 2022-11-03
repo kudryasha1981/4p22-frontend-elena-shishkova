@@ -1,12 +1,7 @@
 'use strict';
 
-let someVariable1;
-someVariable1 = '';
 
-let someVariable2;
-someVariable2 = '';
-
-
-
-
-
+let x = 3; 
+while (x < 10000) {
+    console.log(x = x * 2);
+}

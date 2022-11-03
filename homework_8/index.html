@@ -7,11 +7,19 @@
 </head>
 <body>
     <div>
-        <input placeholder="Ведите первое число">
-        <input placeholder="+, -, *, /">
-        <input placeholder="Ведите второе число">
-        <button>Результат</button>
+        <form id="calc">
+            <label for="firstOperand"></label>
+            <input id="firstOperand" type="text">
+
+            <label for="operator"></label>
+            <input id="operator" type="text">
+
+            <label for="secondOperand"></label>
+            <input id="secondOperand" type="text">
+
+            <button onclick="calc(); return false">Результат</button>
+        </form>
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
