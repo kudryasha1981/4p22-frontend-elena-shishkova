@@ -5,11 +5,10 @@ function calc() {
     const secondOperand = Number(document.forms['calc'].elements['secondOperand'].value);
     const operator = document.forms['calc'].elements['operator'].value;
 
-    if (firstOperand !== Number) {
-        alert('Не введено первое число');
-    } else if (secondOperand !== Number) {
-        alert('Не введено второе число');
-    } else switch (operator) {
+    if (firstOperand !== Number && secondOperand !== Number) {
+        alert('Не введено первое или второе число');
+    }
+      else switch (operator) {
         case '-':
             alert(`Ответ: ${firstOperand - secondOperand}`);
             break;
