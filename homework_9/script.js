@@ -20,9 +20,4 @@ function fib(n) {
   alert( fib(8) ); 
   alert( fib(9) ); 
   alert( fib(10) ); 
-  alert( fib(11) ); 
-  alert( fib(12) ); 
-  alert( fib(13) ); 
-  alert( fib(14) ); 
-  alert( fib(15) ); 
-  alert( fib(16) ); 
+  
