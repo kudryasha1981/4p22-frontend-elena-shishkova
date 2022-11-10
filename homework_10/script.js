@@ -34,11 +34,12 @@ const getUsers = () => {
         console.log('-----------------');
         console.log('Пункт №3');
         console.log('');
-        console.log('Наша база содержит данные следующих пользователей:')
+        console.log('Наша база содержит данные следующих пользователей:');
 
-        users.forEach(({last_name:lastName, first_name:firstName}) => {
-            console.log(lastName + ' ' + firstName)
-        });
+        users.reduce((prev, {last_name: lastName, first_name: firstName}) => 
+            prev += `${lastName} ${firstName}, `, '')
+            .slice(0, -2);
+      
         
 
         console.log('-----------------');
@@ -49,7 +50,7 @@ const getUsers = () => {
         console.log('Пункт №4');
         console.log('');
 
-        result = users.reduce((last_name, first_name) => last_name + '' + first_name);
+        
         console.log(users);
 
         console.log('-----------------');
