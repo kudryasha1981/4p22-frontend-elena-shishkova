@@ -36,11 +36,12 @@ const getUsers = () => {
         console.log('');
         console.log('Наша база содержит данные следующих пользователей:');
 
-        users.reduce((prev, {last_name: lastName, first_name: firstName}) => 
+        let result = users.reduce((prev, {last_name: lastName, first_name: firstName}) => 
             prev += `${lastName} ${firstName}, `, '')
             .slice(0, -2);
+            
       
-        
+        console.log(result);
 
         console.log('-----------------');
         return users;
@@ -49,9 +50,13 @@ const getUsers = () => {
         console.log('-----------------');
         console.log('Пункт №4');
         console.log('');
-
         
-        console.log(users);
+        for (let object of users) {
+            let keys = Object.keys(object);
+            for (let key of keys) {
+                console.log(key);
+            }
+        }
 
         console.log('-----------------');
         return users;
