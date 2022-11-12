@@ -1,8 +1,8 @@
-const getFibonacci = ((prev = 0, next = 1) => () => {
-    const result = prev + next
-    prev = next
-    next = result
-    return result
+const getFibonacci = ((a = 0, b = 1) => () => {
+    const c = a + b
+    a = b
+    b = c
+    return c
   })()
 
 alert (getFibonacci(1)) 
