@@ -1,14 +1,43 @@
 'use strict';
 
-function calc() {
-    const firstOperand = Number(document.forms['calc'].elements['firstOperand'].value);
-    const secondOperand = Number(document.forms['calc'].elements['secondOperand'].value);
-    const operator = document.forms['calc'].elements['operator'].value;
 
-    if (firstOperand !== Number && secondOperand !== Number) {
-        alert('Не введено первое или второе число');
+const button = document.getElementById("button");
+    
+button.addEventListener("click", (event) => {
+    let firstOperand = document.getElementById("first-operand").value;
+    const operator = document.getElementById("operator").value;
+    let secondOperand = document.getElementById("second-operand").value;
+    let result;
+    let output;
+ 
+    if (firstOperand.trim() === "") {
+        alert("Первое число не указано");
+        return (output.innerText = "Первое число не указано");
     }
-      else switch (operator) {
+    
+    if (secondOperand.trim() === "") {
+        alert("Второе число не указано");
+        return (output.innerText = "Второе число не указано");
+    }
+    
+    if (isNaN(firstOperand) || isNaN(secondOperand)) {
+        alert("Некорректный ввод чисел");
+        return (output.innerText = "Некорректный ввод чисел");
+    }
+
+    if (
+        output !== "Программа не поддерживает такую операцию" &&
+        (isNaN(result) || result === Infinity)
+    ) {
+        alert("Операция некорректна");
+    }
+
+    
+    switch (operator) {
+        case "": {
+            alert("Не введён знак");
+            break;
+          }
         case '-':
             alert(`Ответ: ${firstOperand - secondOperand}`);
             break;
@@ -26,7 +55,7 @@ function calc() {
             break;
             
         default:
-            alert('Не знаю, что вы от меня хотите');
+            alert('Программа не поддерживает такую операцию');
     };
-}
+})
 
