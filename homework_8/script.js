@@ -7,8 +7,9 @@ button.addEventListener("click", (event) => {
     let firstOperand = document.getElementById("first-operand").value;
     const operator = document.getElementById("operator").value;
     let secondOperand = document.getElementById("second-operand").value;
-    let result;
-    let output;
+    //let result;
+    //let output;
+    let c = Number(firstOperand) + Number(secondOperand);
  
     if (firstOperand.trim() === "") {
         alert("Первое число не указано");
@@ -25,12 +26,10 @@ button.addEventListener("click", (event) => {
         return (output.innerText = "Некорректный ввод чисел");
     }
 
-    if (
-        output !== "Программа не поддерживает такую операцию" &&
-        (isNaN(result) || result === Infinity)
-    ) {
-        alert("Операция некорректна");
-    }
+    //if (output !== "Программа не поддерживает такую операцию" &&
+        //(isNaN(result) || result === Infinity)) { 
+        //alert("Операция некорректна");
+    //}
 
     
     switch (operator) {
@@ -43,7 +42,7 @@ button.addEventListener("click", (event) => {
             break;
 
         case '+':
-            alert(`Ответ: ${firstOperand + secondOperand}`);
+            alert(`Ответ: ${c}`);
             break;
 
         case '/':

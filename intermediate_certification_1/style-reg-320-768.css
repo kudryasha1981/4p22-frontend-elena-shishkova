@@ -1,0 +1,189 @@
+/* 320-768 */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header {
+        height: calc(80/768*100vw);
+    }
+
+    .header-container-image__image {
+        width: calc(124/768*768);
+        height: calc(25/768*100vw);
+        margin-left: calc(20/768*100vw);
+    }
+
+    .header__heading {
+        margin-left: calc(34/768*100vw);
+        font-size: calc(24/768*100vw);
+    }
+
+    .header__registration {
+        margin-left: calc(219/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .header__enter {
+        margin-left: calc(36/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .form {
+        width: calc(600/768*100vw);
+        height: calc(875/768*100vw);
+        margin-left: calc(84/768*100vw);
+        margin-top: calc(160/768*100vw);
+        box-shadow: 0px 0px 40px 10px #b4b2b2;
+        padding-left: calc(45/768*100vw);
+        padding-right: calc(46/768*100vw);
+    }
+
+    .form__heading {
+        padding-top: calc(26/768*100vw);
+        font-size: calc(50/768*100vw);
+    }
+
+    .form-email__label {
+        margin-top: calc(15/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .form-email__label::before {
+        margin-left: calc(-10/768*100vw);
+    }
+
+    .form-email__input {
+        margin-top: calc(5/768*100vw);
+        height: calc(49/768*100vw);
+        padding-left: calc(15/768*100vw);
+    }
+
+    .form-email__input::placeholder {
+        font-size: calc(28/768*100vw);
+    }
+
+    .form-password__label {
+        margin-top: calc(11/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .form-password__label::before {
+        margin-left: calc(-10/768*100vw);
+    }
+
+    .form-password__input {
+        margin-top: calc(5/768*100vw);
+        height: calc(49/768*100vw);
+        padding-left: calc(15/768*100vw);
+    }
+
+    .form-password__input::placeholder {
+        font-size: calc(28/768*100vw);
+    }
+
+    .form-password-again__label {
+        margin-top: calc(11/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .form-password-again__label::before {
+        margin-left: calc(-10/768*100vw);
+    }
+
+    .form-password-again__input {
+        margin-top: calc(5/768*100vw);
+        height: calc(49/768*100vw);
+        padding-left: calc(15/768*100vw);
+    }
+
+    .form-password-again__input::placeholder {
+        font-size: calc(28/768*100vw);
+    }
+
+    .form-gender__heading {
+        margin-top: calc(11/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .form-gender__man {
+        margin-top: calc(5/768*100vw);
+    }
+
+    .form-gender-man__radio {
+        width: calc(20/768*100vw);
+        height: calc(20/768*100vw);
+        border-radius: 50%;
+    }
+
+    .form-gender-man__label {
+        font-size: calc(14/768*100vw);
+        margin-left: calc(9/768*100vw);
+    }
+
+    .form-gender__woman {
+        margin-top: calc(9/768*100vw);
+    }
+
+    .form-gender-woman__radio {
+        width: calc(20/768*100vw);
+        height: calc(20/768*100vw);
+        border-radius: 50%;
+    }
+
+    .form-gender-woman__label {
+        font-size: calc(14/768*100vw);
+        margin-left: calc(9/768*100vw);
+    }
+
+    .form-textarea__heading {
+        margin-top: calc(11/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
+    .form-textarea-area {
+        margin-top: calc(5/768*100vw);
+        height: calc(246/768*100vw);
+        padding-left: calc(15/768*100vw);
+    }
+
+    .form-textarea-area::placeholder {
+        font-size: calc(28/768*100vw);
+    }
+
+    .form__checkbox {
+        margin-top: calc(24/768*100vw);
+        height: calc(24/768*100vw);
+    }
+
+    .form-checkbox__input {
+        width: calc(24/768*100vw);
+        height: 100%;
+    }
+
+    .form-checkbox__label {
+        font-size: calc(14/768*100vw);
+        padding-left: calc(34/768*100vw);
+    }
+
+    .form-checkbox__label::before {
+        width: calc(24/768*100vw);
+        height: calc(24/768*100vw);
+    }
+
+    .form-checkbox__label::after {
+        width: calc(12/768*100vw);
+        height: calc(12/768*100vw);
+        left: calc(6/768*100vw);
+        top: calc(6/768*100vw);
+    }
+
+    .form__button {
+        margin-top: calc(30/768*100vw);
+    }
+
+    .form-button__enter {
+        width: calc(180/768*100vw);
+        height: calc(52/768*100vw);
+        font-size: calc(24/768*100vw);
+        background: #1A226B;
+        color: white;
+    }
+}
