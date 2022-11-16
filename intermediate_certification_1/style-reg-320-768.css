@@ -41,6 +41,11 @@
         font-size: calc(50/768*100vw);
     }
 
+    .text-error {
+        margin-top: calc(17/768*100vw);
+        font-size: calc(16/768*100vw);
+    }
+
     .form-email__label {
         margin-top: calc(15/768*100vw);
         font-size: calc(16/768*100vw);

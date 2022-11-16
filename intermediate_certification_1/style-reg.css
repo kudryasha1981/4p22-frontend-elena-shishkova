@@ -50,8 +50,30 @@ main {
     font-weight: bold;
 }
 
-.input-error {
-    border-color: red;
+.input-error1 {
+    border-color: red !important;
+}
+
+.input-error2 {
+    border-color: red !important;
+}
+
+.input-error3 {
+    border-color: red !important;
+}
+
+.form-span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-error {
+    color: red;
+    display: none;
+}
+
+.text-error--active {
+    display: block !important;
 }
 
 .form-email__label {

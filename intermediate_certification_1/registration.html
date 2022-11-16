@@ -31,15 +31,24 @@
         <form class="form" id="reg-form">
             <div class="form__heading">Вход</div>
             <div class="form__email">
-                <label for="email" class="form-email__label">Email</label>
+                <span class="form-span">
+                    <label id="email-label" for="email" class="form-email__label">Email</label>
+                    <span id="email-error" class="text-error"></span>
+                </span>
                 <input id="email" type="email" placeholder="Введите e-mail" class="form-email__input">
             </div>
             <div class="form__password">
-                <label for="password" class="form-password__label">Пароль</label>
+                <span class="form-span">
+                    <label id="password-label" for="password" class="form-password__label">Пароль</label>
+                    <span id="password-error" class="text-error"></span>
+                </span>
                 <input id="password" type="password" placeholder="Введите пароль" class="form-password__input">
             </div>
             <div class="form__password-again">
-                <label for="password-again" class="form-password-again__label">Подтверждение пароля</label>
+                <span class="form-span">
+                    <label id="password-again-label" for="password-again" class="form-password-again__label">Подтверждение пароля</label>
+                    <span id="password-again-error" class="text-error"></span>
+                </span>
                 <input id="password-again" type="password" placeholder="Введите пароль" class="form-password-again__input">
             </div>
             <div class="form__gender">
