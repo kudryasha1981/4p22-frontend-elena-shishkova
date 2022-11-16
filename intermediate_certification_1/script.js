@@ -62,7 +62,7 @@ function registration() {
    } else {
       passwordInput.classList.remove('input-error2');
       passwordAgainInput.classList.remove('input-error3');
-      passwordTextError.classList.remove('text-error--active')
+      passwordTextError.classList.remove('text-error--active');
    }
 
    if (passwordInput.value !== passwordAgainInput.value) {
@@ -75,7 +75,6 @@ function registration() {
       passwordAgainInput.classList.remove('input-error3');
       passwordAgainTextError.classList.remove('text-error--active')
    }
-   
 }
 
 
