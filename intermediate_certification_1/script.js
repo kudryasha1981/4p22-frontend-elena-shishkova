@@ -7,12 +7,11 @@ function registration() {
    const emailInput = document.forms['reg-form'].elements['email'];
    const passwordInput = document.forms['reg-form'].elements['password'];
    const passwordAgainInput = document.forms['reg-form'].elements['password-again'];
+ 
 
-   //если email пустой
 
    if(isEmpty(emailInput.value)) {
       emailTextError.textContent = 'Поле обязательно для заполнения' 
-
       emailInput.classList.add('input-error1');
       emailTextError.classList.add('text-error--active')
    } else {
@@ -20,12 +19,8 @@ function registration() {
       emailTextError.classList.remove('text-error--active');
 
       
-
-      //если email невалидный
-
    if(!validateEmail(emailInput.value)) {
       emailTextError.textContent = 'Email введен некорректно'
-
       emailInput.classList.add('input-error1');
       emailTextError.classList.add('text-error--active')
      } else {
@@ -34,25 +29,6 @@ function registration() {
      } 
    }
 
-   if(isEmpty(passwordInput.value)) {
-
-      passwordTextError.textContent = 'Поле обязательно для заполнения'
-      passwordInput.classList.add('input-error2');
-      passwordTextError.classList.add('text-error--active')
-   } else {
-      passwordInput.classList.remove('input-error2');
-      passwordTextError.classList.remove('text-error--active')
-   }
-
-   if(isEmpty(passwordAgainInput.value)) {
-
-      passwordAgainTextError.textContent = 'Поле обязательно для заполнения'
-      passwordAgainInput.classList.add('input-error3');
-      passwordAgainTextError.classList.add('text-error--active')
-   } else {
-      passwordAgainInput.classList.remove('input-error3');
-      passwordAgainTextError.classList.remove('text-error--active')
-   }
 
    if (passwordInput.value.length < 8 ) {
       passwordTextError.textContent = 'Пароль должен содержать не менее 8 символов'
@@ -65,16 +41,41 @@ function registration() {
       passwordTextError.classList.remove('text-error--active');
    }
 
+   if(isEmpty(passwordInput.value)) {
+
+      passwordTextError.textContent = 'Поле обязательно для заполнения'
+      passwordInput.classList.add('input-error2');
+      passwordTextError.classList.add('text-error--active')
+   } else {
+      passwordInput.classList.remove('input-error2');
+      passwordTextError.classList.remove('text-error--active')
+   }
+   
+
+
    if (passwordInput.value !== passwordAgainInput.value) {
+
       passwordTextError.textContent = 'Пароли не совпадают'
       passwordInput.classList.add('input-error2');
-      passwordAgainInput.classList.add('input-error3');
       passwordAgainTextError.classList.add('text-error--active')
    } else {
       passwordInput.classList.remove('input-error2');
+      passwordAgainTextError.classList.remove('text-error--active')
+   }
+
+   if(isEmpty(passwordAgainInput.value)) {
+
+      passwordAgainTextError.textContent = 'Пароли не совпадают'
+      passwordAgainInput.classList.add('input-error3');
+      passwordAgainTextError.classList.add('text-error--active')
+   } else {
       passwordAgainInput.classList.remove('input-error3');
       passwordAgainTextError.classList.remove('text-error--active')
    }
+
+   console.log('Email: ' + emailInput.value);
+   console.log('Пароль: ' + passwordInput.value);
+   console.log('Подтверждение пароля: ' + passwordAgainInput.value);
 }
 
 
