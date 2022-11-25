@@ -14,6 +14,7 @@ function registration() {
    }
 }
 
+
 const checkEmail = () => {
 
    const emailTextError = document.getElementById('email-error');
@@ -22,12 +23,7 @@ const checkEmail = () => {
       emailTextError.textContent = 'Поле обязательно для заполнения' ;
       emailInput.classList.add('input-error1');
       emailTextError.classList.add('text-error--active');
-   } else {
-      emailInput.classList.remove('input-error1');
-      emailTextError.classList.remove('te1xt-error--active');
-
-      
-   if(!validateEmail(emailInput.value)) {
+   } else if(!validateEmail(emailInput.value)) {
       emailTextError.textContent = 'Email введен некорректно';
       emailInput.classList.add('input-error1');
       emailTextError.classList.add('text-error--active');
@@ -38,7 +34,7 @@ const checkEmail = () => {
       return true;
      } 
    }
-}
+
 
 const checkPassword = () => {
 
@@ -69,7 +65,7 @@ const checkPasswordAgain = () => {
 
    if(isEmpty(passwordAgainInput.value)) {
 
-      passwordTextError.textContent = 'Пароли не совпадают';
+      passwordAgainTextError.textContent = 'Пароли не совпадают';
       passwordInput.classList.add('input-error2');
       passwordAgainTextError.classList.add('text-error--active');
 
